@@ -76,6 +76,6 @@ app.post('/register', (req, res) => {
     .catch(err => res.status(400).json('unable to register'))
 })
 
-app.listen(process.env.PORT || 3000, ()=> {
-  console.log('app is running on port ${process.env.PORT}');
+app.listen(5432, ()=> {
+  console.log('app is running on port 5432');
 })
